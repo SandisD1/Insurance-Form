@@ -34,7 +34,7 @@ public class InsuranceService {
     private void parseManufacturers() {
         List<Manufacturer> manufacturers = new ArrayList<>();
         try {
-            File file = new File("src/main/resources/data/manufacturers.xlsx");
+            File file = new File("src/main/java/com/example/application/data/resources/manufacturers.xlsx");
             FileInputStream fis = new FileInputStream(file);
             XSSFWorkbook wb = new XSSFWorkbook(fis);
             XSSFSheet sheet = wb.getSheetAt(0);

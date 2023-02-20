@@ -330,7 +330,7 @@ public class FormView extends Div {
         JSONParser parser = new JSONParser();
         try {
 
-            JSONArray a = (JSONArray) parser.parse(new FileReader("src/main/resources/data/CountryCodes.json"));
+            JSONArray a = (JSONArray) parser.parse(new FileReader("src/main/java/com/example/application/data/resources/CountryCodes.json"));
 
             for (Object o : a) {
                 JSONObject country = (JSONObject) o;
